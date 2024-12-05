@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kegiatan Nusantara</title>
+    <!-- Style -->
+     <link rel="stylesheet" href="kegiatanUtama.css">
+     <script src="https://unpkg.com/feather-icons"></script>
+     <link rel="shortcut icon" href="/img/Logo_Hari_Nusantara.png" type="image/x-icon">
+</head>
+<body>
+    
+    <section class="kegiatan-container">
+        <div class="kegiatan-text">
+            <h2>Kegiatan Nusantara</h2>
+            <p>Kegiatan budaya Nusantara di Indonesia mencakup berbagai tradisi, seni, dan upacara adat yang mencerminkan keberagaman etnis, agama, dan sejarah, seperti tarian, musik tradisional, upacara keagamaan, serta festival daerah yang menjadi simbol identitas dan kekayaan budaya bangsa.</p>
+        </div>
+        <div class="kegiatan-btn">
+            <button class="prev-btn" onclick="movePrev()"><i data-feather="chevron-left"></i></button>
+            <button class="next-btn" onclick="moveNext()"><i data-feather="chevron-right"></i></button>
+        </div>
+        <div class="kegiatan-items-container">
+            <div class="kegiatan-items-column">
+                <div class="kegiatan-items">
+                    <p class="kegiatan-items-title">Festival Tumbe</p>
+                    <p class="kegiatan-items-desc">Menampilkan tradisi maritim dan budaya khas Banggai dengan berbagai atraksi menarik.</p>
+                    <div class="kegiatan-items-info">
+                        <p class="kegiatan-items-status">Sulawesi Tengah</p>
+                        <p class="kegiatan-items-date">04-12-2024</p>
+                    </div>
+                </div>
+                <div class="kegiatan-items">
+                    <p class="kegiatan-items-title">Festival Pesona Minangkabau</p>
+                    <p class="kegiatan-items-desc">Merayakan budaya Minangkabau melalui pertunjukan seni, adat, dan kuliner tradisional.</p>
+                    <div class="kegiatan-items-info">
+                        <p class="kegiatan-items-status">Sumatra Barat</p>
+                        <p class="kegiatan-items-date">05-12-2024</p>
+                    </div>
+                </div>
+                <div class="kegiatan-items">
+                    <p class="kegiatan-items-title">Festival Perang Topat</p>
+                    <p class="kegiatan-items-desc">Tradisi unik berupa perang simbolis menggunakan ketupat sebagai simbol harmoni antarumat beragama.</p>
+                    <div class="kegiatan-items-info">
+                        <p class="kegiatan-items-status">NTB</p>
+                        <p class="kegiatan-items-date">10-12-2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="kegiatan-items-column">
+                <div class="kegiatan-items">
+                    <p class="kegiatan-items-title">Festival Tanjung Waka</p>
+                    <p class="kegiatan-items-desc">Mengusung konsep ekowisata, menonjolkan keindahan alam dan budaya lokal.</p>
+                    <div class="kegiatan-items-info">
+                        <p class="kegiatan-items-status">Maluku Utara</p>
+                        <p class="kegiatan-items-date">13-12-2024</p>
+                    </div>
+                </div>
+                <div class="kegiatan-items">
+                    <p class="kegiatan-items-title">Denpasar Festival</p>
+                    <p class="kegiatan-items-desc">Menampilkan seni dan budaya masyarakat Bali melalui berbagai kegiatan kreatif.</p>
+                    <div class="kegiatan-items-info">
+                        <p class="kegiatan-items-status">Bali</p>
+                        <p class="kegiatan-items-date">22-12-2024</p>
+                    </div>
+                </div>
+                <div class="kegiatan-items">
+                    <p class="kegiatan-items-title">Festival Rupat</p>
+                    <p class="kegiatan-items-desc">Mengangkat seni budaya Melayu dengan pertunjukan seni tradisional dan pameran budaya.</p>
+                    <div class="kegiatan-items-info">
+                        <p class="kegiatan-items-status">Riau</p>
+                        <p class="kegiatan-items-date">06-12-2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="kegiatan-items-column">
+                <div class="kegiatan-items">
+                    <p class="kegiatan-items-title">Sultra Tenun Karnaval</p>
+                    <p class="kegiatan-items-desc">Parade karnaval berwarna-warni yang menampilkan keindahan tenun khas Sulawesi Tenggara.</p>
+                    <div class="kegiatan-items-info">
+                        <p class="kegiatan-items-status">Sulawesi Tenggara</p>
+                        <p class="kegiatan-items-date">11-12-2024</p>
+                    </div>
+                </div>
+                <div class="kegiatan-items">
+                    <p class="kegiatan-items-title">Festival Pesona Selat Lambeh</p>
+                    <p class="kegiatan-items-desc"> Perayaan keindahan bawah laut Selat Lembeh dengan berbagai atraksi bahari.</p>
+                    <div class="kegiatan-items-info">
+                        <p class="kegiatan-items-status">Sulawesi Utara</p>
+                        <p class="kegiatan-items-date">11-12-2024</p>
+                    </div>
+                </div>
+                <div class="kegiatan-items">
+                    <p class="kegiatan-items-title">Festival Lima Danau</p>
+                    <p class="kegiatan-items-desc">Menggabungkan keindahan alam dan seni tradisional khas Minangkabau.</p>
+                    <div class="kegiatan-items-info">
+                        <p class="kegiatan-items-status">Sumatra Barat</p>
+                        <p class="kegiatan-items-date">12-12-2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="kegiatanUtama.js"></script>
+    <script>
+        feather.replace();
+      </script>
+
+</body>
+</html>

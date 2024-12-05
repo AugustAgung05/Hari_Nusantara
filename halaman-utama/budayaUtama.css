@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main-section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 2rem;
+    max-width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.main-section-container .main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    cursor: default;
+}
+
+.main-section-container .main-text h1 {
+    font-family: "Sevillana", cursive;
+    font-weight: 800;
+    font-size: 3em;
+}
+
+.main-section-container .main-text .main-text-sub {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    padding: 0rem 2rem;
+    font-size: 1em;
+    text-align: center;
+}
+
+.main-section-container .main-text .main-text-sub .link {
+    display: flex;
+    justify-content: center;
+}
+
+.main-section-container .main-text .main-text-sub .link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    padding: 1.1rem;
+    background-color: #ffb235;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.main-section-container .main-text .main-text-sub .link a:hover {
+    background-color: #c78419;
+}
+
+.slider-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.slider-img .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 30rem;
+    width: 20rem;
+    border-radius: 20px;
+    cursor: default;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-img .items .items-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.slider-img .items .items-img p {
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.slider-img .items .items-img img {
+    position: absolute;
+    height: 30rem;
+    width: 20rem;
+    object-fit: cover;
+    border-radius: 20px;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+
+.slider-img .items:hover img {
+    filter: brightness(0.3);
+}
+
+.slider-img .items:hover p {
+    opacity: 1;
+}
+
+.slider-img .items:nth-child(1) {
+    height: 26rem;
+    width: 16rem;
+}
+
+.slider-img .items:nth-child(1) img {
+    height: 26rem;
+    width: 16rem;
+}
+
+.slider-img .items:nth-child(2) {
+    height: 28rem;
+    width: 18rem;
+}
+
+.slider-img .items:nth-child(2) img {
+    height: 28rem;
+    width: 18rem;
+}
+
+.slider-img .items:nth-child(4) {
+    height: 28rem;
+    width: 18rem;
+}
+
+.slider-img .items:nth-child(4) img {
+    height: 28rem;
+    width: 18rem;
+}
+
+.slider-img .items:nth-child(5) {
+    height: 26rem;
+    width: 16rem;
+}
+
+.slider-img .items:nth-child(5) img {
+    height: 26rem;
+    width: 16rem;
+}
+
+.img-bg {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(/assets/image/Landing\ Page-01.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -999;
+}
+
+@media only screen and (max-width: 1600px) {
+
+    .main-section-container {
+        padding: 1rem;
+        overflow-y: hidden;
+        min-height: 100vh;
+    }
+
+    .main-section-container .main-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .main-section-container .main-text h1 {
+        font-size: 2em;
+    }
+
+    .main-section-container .main-text .main-text-sub {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1em;
+        line-height: 1.5rem;
+    }
+
+    .main-section-container .main-text .main-text-sub .link a {
+        height: 3rem;
+        padding: 1rem;
+    }
+
+    .slider-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+        padding: 1rem;
+        overflow: hidden;
+    }
+    
+    .slider-img .items {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 20rem;
+        width: 10rem;
+        border-radius: 20px;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slider-img .items .items-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    .slider-img .items ,.items-img p {
+        font-size: 1em;
+        text-align: center;
+        color: white;
+    }
+    
+    .slider-img .items .items-img img {
+        position: absolute;
+        height: 20rem;
+        width: 10rem;
+        object-fit: cover;
+        border-radius: 20px;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .slider-img .items .items-img:hover img {
+        filter: brightness(1);
+    }
+    
+    .slider-img .items:nth-child(1) {
+        height: 16rem;
+        width: 6rem;
+    }
+    
+    .slider-img .items:nth-child(1) img {
+        height: 16rem;
+        width: 8rem;
+    }
+    
+    .slider-img .items:nth-child(2) {
+        height: 18rem;
+        width: 8rem;
+        z-index: 1;
+    }
+    
+    .slider-img .items:nth-child(2) img {
+        height: 18rem;
+        width: 8rem;
+    }
+
+    .slider-img .items:nth-child(3) {
+        z-index: 2;
+    }
+    
+    .slider-img .items:nth-child(4) {
+        height: 18rem;
+        width: 8rem;
+        z-index: 1;
+    }
+    
+    .slider-img .items:nth-child(4) img {
+        height: 18rem;
+        width: 8rem;
+    }
+    
+    .slider-img .items:nth-child(5) {
+        height: 16rem;
+        width: 6rem;
+    }
+    
+    .slider-img .items:nth-child(5) img {
+        height: 16rem;
+        width: 8rem;
+    }
+
+    .slider-img .items:hover {
+        cursor: default;
+    }
+
+    .slider-img .items:nth-child(3):hover {
+        cursor: pointer;
+    }
+
+    .slider-img .items:hover img {
+        filter: brightness(1);
+    }
+    
+    .slider-img .items:hover p {
+        opacity: 0;
+    }
+
+    .slider-img .items:nth-child(3):hover img {
+        filter: brightness(0.3);
+    }
+    
+    .slider-img .items:nth-child(3):hover p {
+        opacity: 1;
+    }
+
+    .img-bg {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(/img/Landing\ Page-01.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 200vh;
+        z-index: -999;
+    }
+}

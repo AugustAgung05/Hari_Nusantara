@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budaya & Tradisi</title>
+    <!-- Style -->
+     <link rel="stylesheet" href="/halaman-detail/budayaDetail.css">
+     <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css">
+     <script src="https://unpkg.com/feather-icons"></script>
+     <link rel="shortcut icon" href="/assets/image/Logo_Hari_Nusantara.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Detail 1 -->
+
+    <div data-scroll-container>
+        <div class="popup-container-img">
+            <div class="exit-wrapper">
+                <button class="exit-btn" onclick="exitPopup()">
+                    <i class="exit-icon" data-feather="x"></i>
+                </button>
+            </div>
+            <div class="img-wrapper">
+                <img class="popup-img" src="/assets/image/69763efb-59d2-4b23-86a7-a2e9a6b6063a.jpg" alt="">
+            </div>
+        </div>
+        <div class="popup-container">
+            <div class="exit-wrapper">
+                <button class="exit-btn" onclick="exitPopup()">
+                    <i class="exit-icon" data-feather="x"></i>
+                </button>
+            </div>
+            <div class="video-wrapper">
+                <video
+                id="tari-saman"
+                class="video-js vjs-default-skin"
+                controls
+                preload="auto"
+                width="650"
+                height="450"
+                poster=""
+                data-setup="{}">
+                <source src="" type="video/mp4"/>
+            </video>
+            </div>
+        </div>
+        <section class="detail-container">
+            <div class="detail-left" data-scroll-section>
+                <div class="detail-image" data-scroll>
+                    <div class="detail-img-left">
+                        <img class="img-horizontal" src="/assets/image/Tari Saman, Aceh.jpg" alt="">
+                        <img class="img-vertical" id="img-vertical-2" src="/assets/image/9 Properti Tari Saman (Lengkap Beserta Gambar Dan Deskripsi).jpg" alt="">
+                    </div>
+                    <div class="detail-img-right">
+                        <img class="img-vertical" src="/assets/image/Asal Usul Tari Saman, Kesenian Aceh yang Berawal dari Sarana Dakwah.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="detail-right" data-scroll-section>
+                <div class="detail-card" data-scroll>
+                    <h2>Tari Saman</h2>
+                    <div class="detail-card-items">
+                        <p>
+                            Tari Saman adalah tarian tradisional yang berasal dari Suku Gayo di Aceh, Indonesia. Tarian ini terkenal karena keindahan gerakannya yang serempak dan dinamis, serta sering dianggap sebagai simbol kekompakan dan kebersamaan. Penari Saman biasanya duduk berbaris rapi dengan jumlah ganjil, mengenakan pakaian tradisional berwarna cerah dengan hiasan khas.
+                        </p>
+                        <p>
+                            Tari Saman diiringi syair berbahasa Gayo yang dinyanyikan oleh penari itu sendiri, dengan tema yang mencakup pujian kepada Allah, pendidikan, adat, atau nasihat. Gerakannya melibatkan tepukan tangan, dada, dan paha, serta gerakan tubuh yang cepat dan terkoordinasi. UNESCO telah menetapkan Tari Saman sebagai Warisan Budaya Takbenda Dunia pada tahun 2011.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery Section -->
+        <section class="gallery-container" data-scroll-section>
+            <div class="gallery-title">
+                <h2>Foto & Video</h2>
+                <p>Berikut adalah beberapa foto dan video yang dapat anda lihat</p>
+            </div>
+            <div class="gallery-items">
+                <div class="gallery-1" viewed-gallery-odd data-scroll data-scroll-class="inview-gallery" data-scroll-repeat>
+                    <img onclick="popUp1()" class="img-1" src="/assets/image/thumbnail-1.jpg" alt="">
+                    <img onclick="popupImg1()" class="img-2" src="/assets/image/Aceh Dancer.jpg" alt="">
+                    <img onclick="popupImg2()" class="img-3" src="/assets/image/f58a6122-030d-4ffd-92f3-6e4980b1e57a.jpg" alt="">
+                </div>
+                <div class="gallery-2" viewed-gallery-even data-scroll data-scroll-class="inview-gallery" data-scroll-repeat>
+                    <img onclick="popupImg3()" class="img-1" src="/assets/image/9 Properti Tari Saman (Lengkap Beserta Gambar Dan Deskripsi).jpg" alt="">
+                    <img onclick="popupImg4()" class="img-2" src="/assets/image/Tari Saman ,Aceh PINdonesia (1).jpg" alt="">
+                    <img onclick="popupImg5()" class="img-3" src="/assets/image//kostum saman.jpg" alt="">
+                </div>
+                <div class="gallery-3" viewed-gallery-odd data-scroll data-scroll-class="inview-gallery" data-scroll-repeat>
+                    <img onclick="popupImg6()" class="img-1" src="/assets/image/saman dance Aceh.jpg" alt="">
+                    <img onclick="popupImg7()" class="img-2" src="/assets/image/UNESCO Akan Beri Sertifikat untuk Tari Saman - Satu Harapan.jpg" alt="">
+                    <img onclick="popupImg8()" class="img-3" src="/assets/image/Tari Saman ,Aceh PINdonesia (2).jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Detail 2 -->
+
+        <section class="detail-container-even">
+            <div class="detail-left" data-scroll-section>
+                <div class="detail-card" data-scroll data-scroll-class="inview-detail" data-scroll-repeat viewed-detail>
+                    <h2>Ngaben</h2>
+                    <div class="detail-card-items">
+                        <p>
+                            Upacara Ngaben adalah ritual kremasi atau pembakaran jenazah dalam tradisi Hindu Bali yang melambangkan pelepasan roh dari tubuh menuju alam baka. Upacara ini dianggap penting karena bertujuan untuk menyucikan roh agar dapat mencapai kehidupan selanjutnya atau kembali bersatu dengan Sang Pencipta.
+                        </p>
+                        <p>
+                            Prosesi Ngaben melibatkan serangkaian ritual, seperti pembuatan wadah jenazah berbentuk lembu atau menara, pengiringan jenazah ke tempat pembakaran, dan pembakaran itu sendiri. Ritual ini diiringi doa dan persembahan sebagai wujud penghormatan terakhir kepada almarhum. Ngaben tidak hanya memiliki makna religius tetapi juga mencerminkan nilai budaya dan sosial masyarakat Bali.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-right" data-scroll-section>
+                <div class="detail-image" data-scroll data-scroll-class="inview-detail" data-scroll-repeat viewed-detail-img-even>
+                    <div class="detail-img-left">
+                        <img class="img-horizontal" src="/assets/image/Ngaben (1).jpg" alt="">
+                        <img class="img-vertical" id="img-vertical-2" src="/assets/image/Ngaben.jpg" alt="">
+                    </div>
+                    <div class="detail-img-right">
+                        <img class="img-vertical" src="/assets/image/ngaben ceremony - gianyar bali.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery Section -->
+        <section class="gallery-container" data-scroll-section>
+            <div class="gallery-title">
+                <h2>Foto & Video</h2>
+                <p>Berikut adalah beberapa foto dan video yang dapat anda lihat</p>
+            </div>
+            <div class="gallery-items">
+                <div class="gallery-1" viewed-gallery-odd data-scroll data-scroll-class="inview-gallery" data-scroll-repeat>
+                    <img onclick="popUp2()" class="img-1" src="/assets/image/videos/hqdefault.jpg" alt="">
+                    <img onclick="popupImg9()" class="img-2" src="/assets/image/ngaben/Attending Ngaben Balinese Cremation Ceremony_ Cultural Guide.jpg" alt="">
+                    <img onclick="popupImg10()" class="img-3" src="/assets/image/ngaben/Corpse burning ceremony called Ngaben, of a royal family member in Ubud, Bali_ This is one of several steps to be done_.jpg" alt="">
+                </div>
+                <div class="gallery-2" viewed-gallery-even data-scroll data-scroll-class="inview-gallery" data-scroll-repeat>
+                    <img onclick="popupImg11()" class="img-1" src="/assets/image/ngaben/Homepage.jpg" alt="">
+                    <img onclick="popupImg12()" class="img-2" src="/assets/image/ngaben/NGABEN MASAL BALINURAGA, UPACARA PITRA YADNYA 19 SEPTEMBER 2023 (BALI SUMATERA).jpg" alt="">
+                    <img onclick="popupImg13()" class="img-3" src="/assets/image/ngaben/Ngaben, Upacara Kematian Khas Masyarakat Bali.jpg" alt="">
+                </div>
+                <div class="gallery-3" viewed-gallery-odd data-scroll data-scroll-class="inview-gallery" data-scroll-repeat>
+                    <img onclick="popupImg14()" class="img-1" src="/assets/image/ngaben/ngaben1.jpg" alt="">
+                    <img onclick="popupImg15()" class="img-2" src="/assets/image/ngaben/Prosesi Upacara Ngaben, Bali.jpg" alt="">
+                    <img onclick="popupImg16()" class="img-3" src="/assets/image/ngaben/Tonys Villas and Resort, Seminyak - Bali _ Playcation in Bali.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Detail 3 -->
+
+        <section class="detail-container">
+            <div class="detail-left" data-scroll-section>
+                <div class="detail-image" data-scroll data-scroll-class="inview-detail" data-scroll-repeat viewed-detail-img>
+                    <div class="detail-img-left">
+                        <img class="img-horizontal" src="/assets/image/Karapan Sapi Merah, Madura.jpg" alt="">
+                        <img class="img-vertical" id="img-vertical-2" src="/assets/image/Karapan Sapi, Tradisi Madura yang Terus Dipelihara.jpg" alt="">
+                    </div>
+                    <div class="detail-img-right">
+                        <img class="img-vertical" src="/assets/image/b4f1309a-6faa-4a06-a946-f42e3eb13110.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="detail-right" data-scroll-section>
+                <div class="detail-card" data-scroll data-scroll-class="inview-detail" data-scroll-repeat viewed-detail>
+                    <h2>Kerapan Sapi</h2>
+                    <div class="detail-card-items">
+                        <p>
+                            Kerapan Sapi adalah tradisi balapan sapi khas Madura, Jawa Timur, yang biasanya diadakan sebagai bagian dari perayaan budaya atau upacara adat. Dalam kerapan sapi, sepasang sapi menarik sebuah kereta kayu kecil yang dinaiki oleh seorang joki, melintasi lintasan pacu sepanjang sekitar 100-200 meter.
+                        </p>
+                        <p>
+                            Tradisi ini bukan hanya ajang hiburan, tetapi juga sarat makna budaya, simbol prestise, dan ajang mempererat hubungan sosial di masyarakat. Persiapan kerapan sapi melibatkan perawatan khusus sapi-sapi peserta, termasuk pemberian makanan bergizi, pelatihan intensif, dan pemakaian aksesoris berwarna-warni. Kompetisi ini biasanya berlangsung meriah dengan iringan musik tradisional dan sorak-sorai penonton.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery Section -->
+        <section class="gallery-container" data-scroll-section>
+            <div class="gallery-title">
+                <h2>Foto & Video</h2>
+                <p>Berikut adalah beberapa foto dan video yang dapat anda lihat</p>
+            </div>
+            <div class="gallery-items">
+                <div class="gallery-1" viewed-gallery-odd data-scroll data-scroll-class="inview-gallery" data-scroll-repeat>
+                    <img onclick="popUp3()" class="img-1" src="/assets/image/videos/hqdefault (1).jpg" alt="">
+                    <img onclick="popupImg17()" class="img-2" src="/assets/image/Karapan sapi/Hier kann man nicht wegsehen_ Bilder, die einen staunen lassen.jpg" alt="">
+                    <img onclick="popupImg18()" class="img-3" src="/assets/image/Karapan sapi/Karapan sapi (1).jpg" alt="">
+                </div>
+                <div class="gallery-2" viewed-gallery-even data-scroll data-scroll-class="inview-gallery" data-scroll-repeat>
+                    <img onclick="popupImg19()" class="img-1" src="/assets/image/Karapan sapi/Karapan Sapi Mendunikan.jpg" alt="">
+                    <img onclick="popupImg20()" class="img-2" src="/assets/image/Karapan sapi/karapan.jpg" alt="">
+                    <img onclick="popupImg21()" class="img-3" src="/assets/image/Karapan sapi/Karapan Sapi, Giliraja Island, Madura, East Java, Indonesia___.jpg" alt="">
+                </div>
+                <div class="gallery-3" viewed-gallery-odd data-scroll data-scroll-class="inview-gallery" data-scroll-repeat>
+                    <img onclick="popupImg22()" class="img-1" src="/assets/image/Karapan sapi/Karapan Sapi.jpg" alt="">
+                    <img onclick="popupImg23()" class="img-2" src="/assets/image/Karapan sapi/Lukisan Digital Karapan Sapi.jpg" alt="">
+                    <img onclick="popupImg24()" class="img-3" src="/assets/image/Karapan sapi/Tradisi Karapan Sapi, Pesta Kebanggaan Masyarakat Madura.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Detail 4 -->
+
+        <section class="detail-container-even">
+            <div class="detail-left" data-scroll-section>
+                <div class="detail-card" data-scroll data-scroll-class="inview-detail" data-scroll-repeat viewed-detail>
+                    <h2>Gamelan</h2>
+                    <div class="detail-card-items">
+                        <p>
+                            Gamelan Jawa adalah ansambel musik tradisional khas masyarakat Jawa, khususnya di wilayah Jawa Tengah dan Yogyakarta. Gamelan ini dikenal dengan karakter suaranya yang lembut, halus, dan penuh harmoni, mencerminkan filosofi masyarakat Jawa yang mengutamakan keseimbangan dan ketenangan.
+                        </p>
+                        <p>
+                            Instrumen dalam gamelan Jawa meliputi gong, kenong, bonang, saron, gender, kendang, dan rebab, serta sering dilengkapi oleh vokal sinden (penyanyi perempuan) atau gerong (penyanyi laki-laki). Musik gamelan Jawa digunakan dalam berbagai kegiatan, seperti upacara adat, pertunjukan wayang kulit, tarian tradisional, dan acara keraton.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-right" data-scroll-section>
+                <div class="detail-image" data-scroll data-scroll-class="inview-detail" data-scroll-repeat viewed-detail-img-even>
+                    <div class="detail-img-left">
+                        <img class="img-horizontal" src="/assets/image/Mengenal Kesenian Daerah Gamelan untuk Melestarikan Budaya Jawa.jpg" alt="">
+                        <img class="img-vertical" id="img-vertical-2" src="/assets/image/Gambar Lambang Gamelan Jawa Tengah.jpg" alt="">
+                    </div>
+                    <div class="detail-img-right">
+                        <img class="img-vertical" src="/assets/image/Pengertian Gamelan _ Gamelan Jawa _ Alat Musik Gamelan.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery Section -->
+        <section class="gallery-container" data-scroll-section>
+            <div class="gallery-title">
+                <h2>Foto & Video</h2>
+                <p>Berikut adalah beberapa foto dan video yang dapat anda lihat</p>
+            </div>
+            <div class="gallery-items">
+                <div class="gallery-1" viewed-gallery-odd data-scroll data-scroll-class="inview-gallery" data-scroll-repeat>
+                    <img onclick="popUp4()" class="img-1" src="/assets/image/videos/hqdefault (2).jpg" alt="">
+                    <img onclick="popupImg25()" class="img-2" src="/assets/image/gamelan/Fakta Unik Gamelan, Instrumen Khas Nusantara yang Terkenal Sampai Mancanegara.jpg" alt="">
+                    <img onclick="popupImg26()" class="img-3" src="/assets/image/gamelan/Gamelan - Java Musical Instrument.jpg" alt="">
+                </div>
+                <div class="gallery-2" viewed-gallery-even data-scroll data-scroll-class="inview-gallery" data-scroll-repeat>
+                    <img onclick="popupImg27()" class="img-1" src="/assets/image/gamelan/gamelan from central java.jpg" alt="">
+                    <img onclick="popupImg28()" class="img-2" src="/assets/image/gamelan/gamelanlagi.jpg" alt="">
+                    <img onclick="popupImg29()" class="img-3" src="/assets/image/gamelan/Gamelan jawa.jpg" alt="">
+                </div>
+                <div class="gallery-3" viewed-gallery-odd data-scroll data-scroll-class="inview-gallery" data-scroll-repeat>
+                    <img onclick="popupImg30()" class="img-1" src="/assets/image/gamelan/Gamelan.jpg" alt="">
+                    <img onclick="popupImg31()" class="img-2" src="/assets/image/gamelan/gamelancoy.jpg" alt="">
+                    <img onclick="popupImg32()" class="img-3" src="/assets/image/gamelan/Nama-nama Gamelan Jawa dan Sejarahnya.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Detail 5 -->
+
+        <section class="detail-container">
+            <div class="detail-left" data-scroll-section>
+                <div class="detail-image" data-scroll data-scroll-class="inview-detail" data-scroll-repeat viewed-detail-img>
+                    <div class="detail-img-left">
+                        <img class="img-horizontal" src="/assets/image/69763efb-59d2-4b23-86a7-a2e9a6b6063a.jpg" alt="">
+                        <img class="img-vertical" id="img-vertical-2" src="/assets/image/ab4bf266-56a2-4d14-9904-f7c2187fd5e5.jpg" alt="">
+                    </div>
+                    <div class="detail-img-right">
+                        <img class="img-vertical" src="/assets/image/Lompat batu nias.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="detail-right" data-scroll-section>
+                <div class="detail-card" data-scroll data-scroll-class="inview-detail" data-scroll-repeat viewed-detail>
+                    <h2>Lompat Batu</h2>
+                    <div class="detail-card-items">
+                        <p>
+                            Lompat Batu Nias adalah tradisi khas masyarakat Nias, Sumatra Utara, yang melibatkan melompati tumpukan batu setinggi sekitar 2 meter. Tradisi ini awalnya merupakan bagian dari ritual kedewasaan dan latihan bagi pemuda untuk menunjukkan keberanian, kekuatan, dan ketangkasan, yang diperlukan dalam peperangan zaman dahulu.
+                        </p>
+                        <p>
+                            Saat ini, lompat batu menjadi daya tarik budaya dan wisata, sering dipertunjukkan dalam acara adat atau festival di Nias. Pelompat mengenakan pakaian adat berwarna-warni, mencerminkan semangat dan kebanggaan budaya masyarakat setempat. Tradisi ini melambangkan keberanian, kehormatan, dan nilai luhur budaya Nias.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery Section -->
+        <section class="gallery-container" data-scroll-section>
+            <div class="gallery-title">
+                <h2>Foto & Video</h2>
+                <p>Berikut adalah beberapa foto dan video yang dapat anda lihat</p>
+            </div>
+            <div class="gallery-items">
+                <div class="gallery-1" viewed-gallery-odd data-scroll data-scroll-class="inview-gallery" data-scroll-repeat>
+                    <img onclick="popUp5()" class="img-1" src="/assets/image/videos/hqdefault (3).jpg" alt="">
+                    <img onclick="popupImg33()" class="img-2" src="/assets/image/lompat batu/Bawömataluo.jpg" alt="">
+                    <img onclick="popupImg34()" class="img-3" src="/assets/image/lompat batu/download (1).jpg" alt="">
+                </div>
+                <div class="gallery-2" viewed-gallery-even data-scroll data-scroll-class="inview-gallery" data-scroll-repeat>
+                    <img onclick="popupImg35()" class="img-1" src="/assets/image/lompat batu/download (2).jpg" alt="">
+                    <img onclick="popupImg36()" class="img-2" src="/assets/image/lompat batu/gancangpml.jpg" alt="">
+                    <img onclick="popupImg37()" class="img-3" src="/assets/image/lompat batu/Lompat Batu Nias.jpg" alt="">
+                </div>
+                <div class="gallery-3" viewed-gallery-odd data-scroll data-scroll-class="inview-gallery" data-scroll-repeat>
+                    <img onclick="popupImg38()" class="img-1" src="/assets/image/lompat batu/Etnografi  Sunda,Dayak Kalteng,Batak,Jawa.jpg" alt="">
+                    <img onclick="popupImg39()" class="img-2" src="/assets/image/lompat batu/Stone jumping - Nias.jpg" alt="">
+                    <img onclick="popupImg40()" class="img-3" src="/assets/image/lompat batu/Tradisi Fahombo_ Lompat Batu sebagai Bentuk Ritual Kedewasaan di Nias.jpg" alt="">
+                </div>
+            </div>
+        </section>      
+    </div>
+
+
+
+    <!-- Script -->
+
+    <script>
+        feather.replace();
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+    <script src="/halaman-detail/budayaDetail.js"></script>
+
+</body>
+</html>
