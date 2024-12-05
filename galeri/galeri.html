@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri Kebudayaan Nusantara</title>
+    <link rel="stylesheet" href="galeri.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sevillana&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/galeri.css">
+  </head>
+  <body>
+    <header>
+      <h1>Galeri Kebudayaan Nusantara</h1>
+      <p>Keindahan budaya Nusantara milik Indonesia</p>
+    </header>
+
+    <main class="container">
+      <div class="masonry">
+          <div class="gallery-item" data-animate>
+            <img src="img/carnival-8028612_1280.jpg" alt="Image 1" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/gamelan-7829624_1280.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-ache-surya-503061316-16110884.jpg" alt="Image 1" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-ache-surya-503061316-16110884.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-ollivves-931007.jpg" alt="Image 2" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-ollivves-931007.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <video src="video/8398057-uhd_4096_2160_25fps.mp4" alt="Video 1" class="gallery-image" autoplay></video>
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('video/8398057-uhd_4096_2160_25fps.mp4')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-tomfisk-3011582.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-tomfisk-3011582.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-aronvisuals-1643130.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-aronvisuals-1643130.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-footnoteintravel-3337612.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-footnoteintravel-3337612.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <video src="video/11621804-hd_1280_720_30fps.mp4" alt="Video 1" class="gallery-image" autoplay></video>
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('video/11621804-hd_1280_720_30fps.mp4')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-lalu-fatoni-228553-739285.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-lalu-fatoni-228553-739285.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-ollivves-931007.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-ollivves-931007.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-ollivves-931018.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-ollivves-931018.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <video src="video/12337653_1080_1920_30fps.mp4" alt="Video 1" class="gallery-image" autoplay></video>
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('video/12337653_1080_1920_30fps.mp4')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-onisam-1512628-2916337.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-onisam-1512628-2916337.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-pamanjoe-15192990.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-pamanjoe-15192990.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <video src="video/17576166-uhd_3840_2160_30fps.mp4" alt="Video 1" class="gallery-image" autoplay></video>
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('video/17576166-uhd_3840_2160_30fps.mp4')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-pixabay-161293.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-pixabay-161293.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-printproper-2803276.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-printproper-2803276.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <video src="video/19773000-hd_1920_1080_25fps.mp4" alt="Video 1" class="gallery-image" autoplay></video>
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('video/19773000-hd_1920_1080_25fps.mp4')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-stijn-dijkstra-1306815-2583849.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-stijn-dijkstra-1306815-2583849.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-stijn-dijkstra-1306815-2499777.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-stijn-dijkstra-1306815-2499777.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <video src="video/3872600-hd_1280_720_30fps.mp4" alt="Video 1" class="gallery-image" autoplay></video>
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('video/3872600-hd_1280_720_30fps.mp4')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-stijn-dijkstra-1306815-2583852.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-stijn-dijkstra-1306815-2583852.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-timrael-2474689.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-timrael-2474689.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <video src="video/6655664-hd_1920_1080_25fps.mp4" alt="Video 1" class="gallery-image" autoplay></video>
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('video/6655664-hd_1920_1080_25fps.mp4')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-tomfisk-1518723.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-tomfisk-1518723.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-tomfisk-1551491.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-tomfisk-1551491.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <video src="video/3872600-hd_1280_720_30fps.mp4" alt="Video 1" class="gallery-image" autoplay></video>
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('video/3872600-hd_1280_720_30fps.mp4')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-tomfisk-2040807.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-tomfisk-2040807.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-tomfisk-2097855.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-tomfisk-2097855.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <video src="video/6655664-hd_1920_1080_25fps.mp4" alt="Video 1" class="gallery-image" autoplay></video>
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('video/6655664-hd_1920_1080_25fps.mp4')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-tomfisk-3011582.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-tomfisk-3011582.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-tomfisk-3092904.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-tomfisk-3092904.jpg')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <video src="video/8397113-uhd_4096_2160_25fps.mp4" alt="Video 1" class="gallery-image" autoplay></video>
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('video/8397113-uhd_4096_2160_25fps.mp4')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <video src="video/9399858-hd_1920_1080_30fps.mp4" alt="Video 1" class="gallery-image" autoplay></video>
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('video/9399858-hd_1920_1080_30fps.mp4')">Detail</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-animate>
+            <img src="img/pexels-tomfisk-3148866.jpg" alt="Image 3" class="gallery-image">
+            <div class="overlay">
+              <button class="detail-btn" onclick="showPopup('img/pexels-tomfisk-3148866.jpg')">Detail</button>
+            </div>
+          </div>
+      </div>
+    </main>
+
+    <div id="popup" class="popup hidden">
+      <button class="close" onclick="hidePopup()">Lihat Semua</button>
+      <div id="popup-content">
+        <img id="popup-image" src="" alt="Popup Image"/>
+        <video id="popup-video" controls style="display: none;"></video>
+      </div>
+    </div>
+
+    <script>
+
+        const galleryItem = document.querySelectorAll("[data-animate]");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+galleryItem.forEach((item) => {
+  observer.observe(item);
+});
+      
+      function showPopup(mediaSrc) {
+    const popup = document.getElementById('popup');
+    const popupImage = document.getElementById('popup-image');
+    const popupVideo = document.getElementById('popup-video');
+  
+    popupImage.src = '';
+    popupVideo.src = '';
+    
+    if (mediaSrc.endsWith('.mp4')) {
+      popupImage.style.display = 'none'; 
+      popupVideo.style.display = 'block'; 
+      popupVideo.src = mediaSrc;
+    } else {
+      popupVideo.style.display = 'none'; 
+      popupImage.style.display = 'block';
+      popupImage.src = mediaSrc;
+    }
+    
+    popup.classList.remove('hidden');
+  }
+  
+  function hidePopup() {
+    const popup = document.getElementById('popup');
+    const popupImage = document.getElementById('popup-image');
+    const popupVideo = document.getElementById('popup-video');
+    
+
+    popupImage.src = '';
+    popupVideo.src = '';
+    
+    popup.classList.add('hidden');
+  }
+  
+    </script>
+  </body>
+</html>
