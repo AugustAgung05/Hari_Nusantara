@@ -2,6 +2,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+scroll-behavior: smooth;
 }
 
 .hero {
@@ -341,20 +342,139 @@ margin: 0;
     opacity: 0;
     transition: opacity 1s ease-in-out;
   }
-  
-  .showText {
-    opacity: 1 !important;
-  }
-  
-  .show {
-    opacity: 1;
-    transition: opacity 2s ease-in-out;
-  }
 
   #animatedParagraph, #animatedLink {
     opacity: 0;
     transform: translateY(20px);
   }
+
+
+
+  .content-beranda {
+    width: 100%;
+    background-color: #3ABEF9;
+    padding: 5.5rem;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+
+  .content-beranda .content-main h1 {
+    font-size: 4rem;
+    font-family: "Sevillana", sans-serif;
+  }
+
+  .content-beranda .content-main{
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .content-main .container-information {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 0;
+    gap: 16px;
+  }
+
+  .card-information {
+    height: 6rem;
+    padding: 20px;
+    border: 1px solid white;
+    background-color: #ffffff;
+    color: #3ABEF9;
+    border-radius: 10px;
+    flex: 1 1 calc(25% - 16px);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease; 
+  }
+  
+  .card-information.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .card-information .highlight-card {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .yt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 60px 0;
+  }
+
+  .yt-container h1 {
+    font-family: "Sevillana", sans-serif;
+    color: #3ABEF9;
+    font-size: 4rem;
+    margin-bottom: 50px;
+  }
+
+  .yt-container #yt-video {
+    width: 90%;
+    height: 100vh;
+    border-radius: 10px;
+  }
+  
+  .card-navigation {
+    background-color: #3ABEF9;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 60px 0;
+    font-family: "Sevillana", sans-serif;
+  }
+
+  .card-navigation h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .card {
+    flex: 1 1 calc(25% - 16px);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 400px;
+    color: white;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .card-title {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+
 
   @media screen and (max-width: 768px) {
 
@@ -397,20 +517,41 @@ margin: 0;
             border-radius: 10px;
             }
 
-            .description a {
-                display: inline-block; 
-                background-color: #3ABEF9; 
-                color: white; 
-                margin-top: 5px;
-                padding: 5px 10px; 
-                text-decoration: none; 
-                border-radius: 20px; 
-                font-size: 8px; 
-                text-align: center; 
-                transition: background-color 0.3s ease, transform 0.3s ease; 
-                }
+  .description a {
+   display: inline-block; 
+   background-color: #3ABEF9; 
+   color: white; 
+   margin-top: 5px;
+   padding: 5px 10px; 
+   text-decoration: none; 
+   border-radius: 20px; 
+   font-size: 8px; 
+   text-align: center; 
+   transition: background-color 0.3s ease, transform 0.3s ease; 
   }
-  
+
+  .content-main .card-information {
+      flex: 1 1 calc(50% - 16px);
+    }    
+    .card-information p {
+      font-size: .8rem;
+    }
+    
+    .card-information .highlight-card {
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    .yt-container h1 {
+      font-size: 2.5rem;
+    }
+
+    .yt-container #yt-video {
+      height: 50vh;
+    }
+
+  }
+
   .footer {
     padding: 20px;
     height: 350px;
@@ -565,5 +706,10 @@ margin: 0;
     height: 760px;
   }
   }
+
+  .showText {
+    opacity: 1 !important;
+  }
+
 
   
